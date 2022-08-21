@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar {
+    position: absolute;
+    background-color:gainsboro;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 22px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0;
+}
+.sidebar nav li:hover {
+    transform: scale(1.4);
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    background-color: rgb(253, 253, 247);
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+
+}
+
+.infocontainer {
+    margin: 110px auto;
+    /* background-color: pink; */
+    height: 65vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.about {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+.buttons {
+    margin: 2.2em 0em;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 4px 11px;
+    border-radius: 22px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-sn {
+    font-size: 14px;
+    padding: 5px 19px;
+    margin: 12px 0;
+}
+
+.moreabout {
+    margin-top: 23px;
+    font-size: 2em;
+}
+
+.devpic img {
+    height: 70vh;
+    width: 24vw;
+    border: 1px solid rgb(158, 216, 135);
+    
+    border-radius:50%;
+    background-color: rgba(239, 168, 113, 0.616);
+}
+
+/* CSS for Contact details */
+
+.contactform {
+    padding: 0 34px;
+    margin: 50px 88px;
+}
+
+.contactform h1 {
+    font-family: 'Playfair Display', serif;
+    /* text-align: center; */
+    /* padding: 12px 0; */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.contactform form {
+    margin: 0 40px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+/* CSS for Blog */
+
+.blogitem {
+    margin: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 16px;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    
+}
+
+.blogcontainer {
+    padding: 0;
+    margin: 88px;
+}
+
+.intro {
+    margin: 88px;
+}
+
+.intro h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 12px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.skillscontainer {
+    padding: 12px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.skill {
+    width: 256px;
+    height: 6px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+span{
+    margin-left: 5px;
+    font-weight:550;
+}
+
+.hundred {
+    width: 256;
+    background-color: darkorange;
+
+}
+
+.fifty {
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5 {
+    width: 75px;
+    background-color: aquamarine;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+@media (max-width:1291px) {
+    .devpic {
+        display: none;
+    }
+
+    .intro,
+    .blogcontainer,
+    .contactform {
+        margin: 50px 8px;
+    }
+
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 6px;
+    }
+
+}
+
+
+
+/* CSS FOR CROSS AND HAM */
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+
+.cross {
+    margin-left: 111px;
+}
+
+/* ADDITIONAL */
+
+.projects{
+    font-family: 'Playfair Display', serif;
+    margin: 13px;
+    font-size:20px ;
+    font-weight: bold;
+}
+.explainproject{
+    font-family: 'Playfair Display', serif;
+    margin: 13px;
+    font-size:16px ;
+    font-weight: bold;
+}
+
+#imageser{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid blue;
+}
+.serh{
+    margin:30px;
+}
